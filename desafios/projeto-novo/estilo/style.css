@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+
+:root {
+    --fonte1: Verdana, Geneva,Tahoma,sans-serif
+}
+
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +15,7 @@
 html,body {
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -19,6 +27,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4vw;
 }
 
 header > p {
@@ -40,6 +50,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
 section.normal {
@@ -48,13 +60,14 @@ section.normal {
 }
 
 section.imagem {
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.623);
     color: white;
 
 }
 
 section.imagem > p {
-    width: 400px;
+    width: 400px; 
     background-color: rgba(0, 0, 0, 0.548);
 }
 
